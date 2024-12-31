@@ -1,0 +1,4 @@
+try {
+android.content.pm.PackageInfo pinfo = getPackageManager().getPackageInfo(package_name, android.content.pm.PackageManager.GET_ACTIVITIES);
+ver = pinfo.versionName; }
+catch (Exception e){ showMessage(e.toString()); }
